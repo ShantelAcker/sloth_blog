@@ -21,12 +21,16 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'ji)a#-q)ra)8t1e@3llv09cg@4%6cxohdi96o2@(iv7z2frc#%'
+# SECRET_KEY = 'ji)a#-q)ra)8t1e@3llv09cg@4%6cxohdi96o2@(iv7z2frc#%'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'sloth-blog.herokuapp.com',
+    'awkwardsloth.net',
+]
 
 
 # Application definition
