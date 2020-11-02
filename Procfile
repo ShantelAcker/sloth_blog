@@ -1,0 +1,1 @@
+web: gunicorn sloth_blog.wsgi
