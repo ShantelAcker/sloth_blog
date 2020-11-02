@@ -1,0 +1,20 @@
+{% extends "blog/base.html" %}
+
+{% block content %}
+
+{% load markdown_extras %} 
+
+{% for post in posts %}
+    <article>
+        <div class="info">
+            <h1>{{ post.headline }}</h1>
+            <h2>{{ post.tagline }}</h2>
+            <h3>By {{ post.author }} | {{ post.pub_date }}</h3>
+        </div>
+        <p>{{ post.content | markdown | safe }}</p>
+    </article>
+{% empty %}
+    <p>No Posts.</p>
+{% endfor %}
+
+{% endblock content %}

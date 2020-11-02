@@ -1,0 +1,69 @@
+/* universal styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: aliceblue;
+}
+
+/* header styles */
+header {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.tagline {
+    color: gray;
+    font-size: 1.5rem;
+}
+
+header p {
+    font-size: 3rem;
+}
+
+header a {
+    text-decoration: none;
+    color: rgb(3, 3, 63);
+}
+
+header li {
+    list-style-type: none;
+    display: inline;
+    font-size: 1.3rem;
+    color: black;
+}
+
+nav {
+    word-spacing: 20px;
+}
+
+/* article styles */
+article {
+    max-width: 80%;
+    margin: 0 auto;
+}
+article p {
+    margin-top: 20px;
+}
+.info {
+    margin-top: 30px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    color: rgb(167, 165, 165);
+    font-weight: 600;
+}
+
+h3 {
+    font-weight: normal;
+    color: rgb(3, 3, 63);
+
+}
