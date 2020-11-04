@@ -50,15 +50,18 @@ article p {
 }
 .info {
     margin-top: 30px;
-    text-align: center;
+    /* text-align: center; */
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 36px;
+}
+
+.tagline {
+    color: rgb(167, 165, 165);
 }
 
 h2 {
-    color: rgb(167, 165, 165);
     font-weight: 600;
 }
 

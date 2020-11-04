@@ -8,7 +8,7 @@
     <article>
         <div class="info">
             <h1>{{ post.headline }}</h1>
-            <h2>{{ post.tagline }}</h2>
+            <h2 class="tagline">{{ post.tagline }}</h2>
             <h3>By {{ post.author }} | {{ post.pub_date }}</h3>
         </div>
         <p>{{ post.content | markdown | safe }}</p>
