@@ -59,10 +59,12 @@ h1 {
 
 .tagline {
     color: rgb(167, 165, 165);
+    margin: 0;
 }
 
 h2 {
     font-weight: 600;
+    margin-top: 20px;
 }
 
 h3 {
