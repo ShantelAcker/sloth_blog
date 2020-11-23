@@ -21,11 +21,7 @@ header {
 
 .tagline {
     color: gray;
-    font-size: 1.5rem;
-}
-
-header p {
-    font-size: 3rem;
+    font-size: 24px;
 }
 
 header a {
@@ -37,7 +33,7 @@ header a {
 header li {
     list-style-type: none;
     display: inline;
-    font-size: 1.3rem;
+    font-size: 24px;
     color: black;
 }
 
@@ -50,9 +46,11 @@ article {
     max-width: 80%;
     margin: 0 auto;
 }
+
 article p {
     margin-top: 20px;
 }
+
 .info {
     margin-top: 30px;
     /* text-align: center; */
@@ -100,7 +98,7 @@ footer {
 
 /* add responsive big screen design stuff here */
 /* narrow the max-width more on big screens */
-/* @media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1000px) {
     article {
         max-width: 50%;
     }
@@ -108,4 +106,4 @@ footer {
     .about {
         max-width: 50%;
     }
-} */
+}
