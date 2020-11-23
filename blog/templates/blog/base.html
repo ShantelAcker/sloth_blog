@@ -9,19 +9,18 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <header>
-    <p>
+    <p class="site-title">
         <a href="{% url 'blog:index' %}">AwkwardSloth</a>
     </p>
     <p class="tagline">a games and tech blog.</p>
-        <nav>
-            <ul>   
-                <li><a href="{% url 'blog:index' %}">Home</a></li>
-                <li><a href="{% url 'blog:about' %}">About</a></li>
-            </ul>
-        </nav>
+    <nav>
+        <ul>
+            <li><a href="{% url 'blog:index' %}">Home</a></li>
+            <li><a href="{% url 'blog:about' %}">About</a></li>
+        </ul>
+    </nav>
 </header>
 {% block content %}{% endblock content %}
 
 
 </html>
-

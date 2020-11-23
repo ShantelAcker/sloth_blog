@@ -15,6 +15,10 @@ header {
     margin-top: 30px;
 }
 
+.site-title {
+    font-size: 48px;
+}
+
 .tagline {
     color: gray;
     font-size: 1.5rem;
@@ -96,7 +100,7 @@ footer {
 
 /* add responsive big screen design stuff here */
 /* narrow the max-width more on big screens */
-@media only screen and (min-width: 800px) {
+/* @media only screen and (min-width: 800px) {
     article {
         max-width: 50%;
     }
@@ -104,4 +108,4 @@ footer {
     .about {
         max-width: 50%;
     }
-}
+} */
