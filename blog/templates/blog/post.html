@@ -4,17 +4,16 @@
 
 {% load markdown_extras %}
 
-{% for post in posts %}
 <article>
     <div class="info">
-        <h1 class="headline"><a href="{% url 'blog:post' post.id %}">{{ post.headline }}</a></h1>
+        <h1>{{ post.headline }}</h1>
         <h2 class="tagline">{{ post.tagline }}</h2>
         <h3>{{ post.author }} | {{ post.pub_date }}</h3>
     </div>
-    <p>{{ post.content|truncatechars:255 | markdown | safe}}</p>
+    <p>{{ post.content | markdown | safe}}</p>
 </article>
-{% empty %}
-<p>No Posts.</p>
-{% endfor %}
+
+
+
 
 {% endblock content %}

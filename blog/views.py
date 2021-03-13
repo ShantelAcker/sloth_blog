@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.views.generic import ListView, DetailView
 
 from .models import Post
 
@@ -10,6 +11,13 @@ def index(request):
     posts = Post.objects.order_by('-pub_date')
     context = {'posts': posts}
     return render(request, 'blog/index.html', context)
+
+
+def post(request, post_id):
+    """Show a single post and all its content."""
+    post = Post.objects.get(id=post_id)
+    context = {'post': post}
+    return render(request, 'blog/post.html', context)
 
 
 def about(request):

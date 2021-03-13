@@ -51,6 +51,11 @@ article p {
     margin-top: 20px;
 }
 
+.headline a {
+    text-decoration: none;
+    color: rgb(3, 3, 63)
+}
+
 .info {
     margin-top: 30px;
     /* text-align: center; */
@@ -94,6 +99,7 @@ h3 {
 /* footer styles */
 footer {
     text-align: center;
+    margin-top: 100px;
 }
 
 /* add responsive big screen design stuff here */

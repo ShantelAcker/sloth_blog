@@ -9,5 +9,7 @@ urlpatterns = [
     # Home page
     path('', views.index, name='index'),
     # About page
-    path('about/', views.about, name='about')
+    path('about/', views.about, name='about'),
+    # Individual Post Page
+    path('posts/<int:post_id>/', views.post, name='post')
 ]
